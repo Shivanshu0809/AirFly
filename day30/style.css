@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,600;0,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: public sans,sans-serif;
+   
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 5rem;
+    z-index: 10;
+}
+.navprt1 h1{
+    font-size: 1.5rem;
+}
+.navprt1 span{
+    color: rgb(6, 141, 195);
+    font-size: 2.5rem;
+
+}
+.navprt2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navprt2>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    z-index: 10;
+}
+.navprt2>a button{
+    padding: .7rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(6, 141, 195); 
+    color: #fff;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.herolftprt{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.herolftprt>span{
+    font-weight: bold;
+    color: #DF6951;
+}
+.herolftprt>h1{
+    font-size: 5rem;
+    color: #181E4B;
+}
+.herolftprt>p{
+    color: #5E6282;
+    font-weight: 600;
+    line-height: 25px;
+}
+.herolftprt>.buttons{
+    display: flex;
+    align-items: center;
+
+}
+.buttons>button{
+    padding: .8rem;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: rgb(6, 141, 195); 
+
+    color: #fff;
+    font-weight: 600;
+    font-size: .9rem;
+    border: none;
+    cursor: pointer;
+}
+.buttons>.img{
+    display: flex;
+    align-items: center;
+}
+.img>p{
+    font-weight: 600;
+    
+}
+
+.herorytprt>img{
+    position: relative;
+    width: 650px;
+    z-index: 10;
+}
+.hero>.blob{
+    position: absolute;
+    right: 0;
+    z-index:1;
+    top: -10%;
+
+}
+.airplane{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 8;
+    animation: plane 10s infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes plane{
+    0%{
+        left: 35%;
+        top: 50%;
+    }
+    50%{
+      
+       top:10% ;
+       left: 60%;
+    }
+    100%{
+        top: -20%;
+        left: 80%;
+    }
+}
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    gap: 40px;
+    
+}
+.secuprprt{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.secuprprt>span{
+    font-weight: bold;
+    color: #DF6951;
+}
+.secuprprt>h1{
+    font-size: 2.5rem;
+}
+.seclwrprt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.prt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: .5px solid rgba(111, 111, 111, 0.437);
+    width: 20vw;
+    transition: all .2s ease-in-out;
+
+}
+.prt:hover{
+    box-shadow: 0px 0px 25px purple;
+    background-color: black;
+    color: #fff;
+}
+.prt>img{
+    width: 120px;
+    aspect-ratio: 4/2;
+    object-fit: contain;
+
+}
+.prt>h2{
+    font-size: 1rem;
+}
+.prt>p{
+    font-size: .9rem;
+    text-align: center;
+    font-weight: 600;
+    color: #5E6282;
+    line-height: 20px;
+}
+
+.sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    text-align: center;
+    gap: 40px;
+    background-color: #82add77b;
+    padding: 2rem;
+    width: 50vw;
+    margin-left: 25%;
+    border-top-left-radius: 80px;
+}
+.sec2>h1{
+    color: #5E6282;
+}
+.email>input{
+    width: 15vw;
+    padding: .8rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.email>button{
+    width: 8vw;
+    padding: .8rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background-color: #eb7246;
+    color: #fff;
+
+}
+footer{
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ftpart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.ftpart>h2{
+    font-size: 1.1rem;
+}
+.ftpart>a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #5E6282;
+}
+.ftpart>p{
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.credits{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: #5E6282;
+    user-select: none;
+}
+@media(max-width:430px){
+    .nav{
+        padding: .5rem 1rem;
+    }
+    .navprt2{
+        display: none;
+    }
+    .hero{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .airplane{
+        display: none;
+    }
+    .hero>.blob{
+       display: none;
+    }
+    .herolftprt>h1{
+        font-size: 3rem;
+        color: #181E4B;
+    }
+    .herolftprt>h1 br{
+        display: none;
+    }
+    .herolftprt>p{
+        color: #5E6282;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    .herolftprt>p br{
+        display: none;
+
+    }
+    .buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .buttons>button{
+        width: 100%;
+    }
+    .buttons>.img{
+        flex-direction: column;
+
+    }
+    .herorytprt>img{
+        width: 100vw;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    .sec1{
+        padding: 1rem;
+    }
+    .secuprprt>h1{
+        font-size: 2rem;
+    }
+    .seclwrprt{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .seclwrprt>.prt{
+        width: 100%;
+
+    }
+    .prt>p br{
+        display: none;
+    }
+    .sec2{
+        width: 100%;
+        margin-left: 0;
+        /* padding: 1rem; */
+    }
+    .sec2>h1 br{
+        display: none;
+    }
+    .email{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .email>input{
+        width: 100%;
+    }
+    .email>button{
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+        gap: 50px;
+        padding:0rem 5rem;
+    }
+    .ftpart>h1{
+        font-size: 1.5rem;
+    }
+    .ftpart>p{
+        font-size: .8rem;
+    }
+
+}
+@media(max-width:325px){
+    .herolftprt>span{
+        font-size: .8rem;
+    }
+    .herolftprt>h1{
+        font-size: 2rem;
+    }
+    .herolftprt>p{
+        font-size: .9rem;
+
+    }
+    .secuprprt>h1{
+        font-size: 1.2rem;
+    }
+}
